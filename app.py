@@ -1,10 +1,9 @@
 import streamlit as st
-import pickle
+import joblib
 import numpy as np
 
 # Load the trained KNN model
-with open('/mnt/data/knn.pkl', 'rb') as file:
-    model = pickle.load(file)
+model = joblib.load('/mnt/data/knn.pkl')
 
 # Streamlit UI
 st.title("Iris Flower Prediction using KNN")
