@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the trained KNN model
-model = joblib.load('/mnt/data/knn.pkl')
+model = joblib.load("knn.pkl")
 
 # Streamlit UI
 st.title("Iris Flower Prediction using KNN")
